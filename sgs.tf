@@ -1,7 +1,7 @@
 resource "aws_security_group" "default" {
   name        = "terraform-ecs-nginx"
   description = "Allow traffic"
-  vpc_id      = "vpc-68426b12"
+  vpc_id      = "vpc-925066e8"
   ingress {
     from_port   = 22
     to_port     = 22
@@ -21,3 +21,4 @@ resource "aws_security_group" "default" {
     cidr_blocks     = ["0.0.0.0/0"]
   }
 }
+
